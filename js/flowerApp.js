@@ -31,3 +31,14 @@ flowers.forEach(f => console.log(f.toJSON()));
 
 rainbowRoses.set('price', 20);
 
+// collections
+var flowerGroup = new app.FlowersCollection([
+  redRoses, rainbowRoses
+]);
+
+flowerGroup.add(heirloomRoses);
+
+flowerGroup.remove(redRoses);
+
+console.log(flowerGroup.toJSON());
+
