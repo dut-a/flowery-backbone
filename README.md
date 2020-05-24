@@ -1,5 +1,8 @@
 ## Editor
-    VSCode
+<span></span>
+    <pre>
+        <a href="https://code.visualstudio.com" target="_blank">VSCode</a>
+    </pre>
 
 ## Tech stack
     HTML, CSS, JavaScript (Backbone.js)
