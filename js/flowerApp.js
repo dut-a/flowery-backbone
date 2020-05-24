@@ -29,3 +29,5 @@ var flowers = [
 
 flowers.forEach(f => console.log(f.toJSON()));
 
+rainbowRoses.set('price', 20);
+
