@@ -29,16 +29,20 @@ var flowers = [
 
 flowers.forEach(f => console.log(f.toJSON()));
 
-rainbowRoses.set('price', 20);
+// rainbowRoses.set('price', 20);
 
 // collections
 var flowerGroup = new app.FlowersCollection([
-  redRoses, rainbowRoses
+  ...flowers
 ]);
 
-flowerGroup.add(heirloomRoses);
+// flowerGroup.add(heirloomRoses);
 
-flowerGroup.remove(redRoses);
+// flowerGroup.remove(redRoses);
 
 console.log(flowerGroup.toJSON());
+
+var flowerGroupView = new app.allFlowersView({ collection: flowerGroup});
+
+$("#all-flowers").html(flowerGroupView.render().el);
 
