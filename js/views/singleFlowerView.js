@@ -5,5 +5,11 @@ var app = app || {};
 app.singleFlowerView = Backbone.View.extend({
   tagName: "article",
   className: "flower-list-item",
+  template: _.template( $("#flower-element").html() ),
+  render: function() {
+    var flowerTemplate = this.template(this.model.toJSON());
+    this.$el.html(flowerTemplate);
+    return this;
+  }
 });
 
