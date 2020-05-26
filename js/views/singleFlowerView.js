@@ -10,6 +10,16 @@ app.singleFlowerView = Backbone.View.extend({
     var flowerTemplate = this.template(this.model.toJSON());
     this.$el.html(flowerTemplate);
     return this;
+  },
+  events: {
+    'mouseover': 'addBgColor',
+    'mouseout': 'removeBgColor'
+  },
+  addBgColor: function() {
+    this.$el.addClass("bg-color-image");
+  },
+  removeBgColor: function() {
+    this.$el.removeClass("bg-color-image");
   }
 });
 
