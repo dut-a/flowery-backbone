@@ -46,3 +46,7 @@ var flowerGroupView = new app.allFlowersView({ collection: flowerGroup});
 
 $("#all-flowers").html(flowerGroupView.render().el);
 
+// Routing
+var flowerRouter = new app.Router();
+Backbone.history.start();
+
