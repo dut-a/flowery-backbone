@@ -22,6 +22,8 @@ body {
 .image {
   border: 3px solid purple;
   padding: 2px;
+  width: 210px;
+  height: 210px;
 }
 
 .flower-list-item {
